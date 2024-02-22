@@ -1715,21 +1715,21 @@
       <div class="items__wrapper wrapper">
         <div class="items__block">
           <div class="items__tabs">
-            <button class="items__tab items__tab-active profile__grey-btn">
+            <button data-tab="items" class="items__tab items__tab-active profile__grey-btn">
               <svg class="items__tab-svg" width="21" height="21" fill="#909BA7">
                 <use href="./img/sprite.svg#items"></use>
               </svg>
               <span>Items</span>
               <span class="items__num">0</span>
             </button>
-            <button class="items__tab profile__grey-btn">
+            <button data-tab="contracts" class="items__tab profile__grey-btn">
               <svg class="items__tab-svg" width="21" height="19" fill="#909BA7">
                 <use href="./img/sprite.svg#contracts"></use>
               </svg>
               <span>CONTRACTS</span>
               <span class="items__num">0</span>
             </button>
-            <button class="items__tab profile__grey-btn">
+            <button data-tab="upgrades" class="items__tab profile__grey-btn">
               <svg class="items__tab-svg" width="19" height="21" fill="#909BA7">
                 <use href="./img/sprite.svg#upgrades"></use>
               </svg>
@@ -1818,7 +1818,7 @@
             </button>
           </div>
         </div>
-        <div class="items__list">
+        <div data-tab="items" class="items__list items__tab-content">
           <article class="items__item items__item-yellow">
             <div class="items__visible">
               <div class="items__content">
@@ -2497,6 +2497,916 @@
                 <use href="./imgOld/sprite.svg#bgLogo"></use>
               </svg>
               <img width="150" height="100" src="./imgOld/skins/23.png" alt="skin" class="items__skin">
+            </div>
+          </article>
+        </div>
+        <div style="display: none;" data-tab="contracts" class="items__tab-content contracts">
+          <article class="contracts__contract">
+            <div class="contracts__block">
+              <div class="contracts__result contracts__item item__red">
+                <span class="contracts__series">MW</span>
+                <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="186" height="195">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="278" height="185" src="./imgOld/skins/10.png" alt="skin" class="contracts__skin">
+                <div class="contracts__content">
+                  <div class="contracts__left">
+                    <span class="contracts__weapon">AK-47</span>
+                    <span class="contracts__name">Corticera</span>
+                  </div>
+                  <p class="contracts__price"><span class="og">$</span> <span class="contracts__price-num">246.76</span>
+                  </p>
+                </div>
+              </div>
+              <div class="contracts__list">
+                <div class="contracts__item item__red">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./imgOld/skins/12.png" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__pink">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./imgOld/skins/18.png" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__pink">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./imgOld/skins/14.png" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__red">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./imgOld/skins/6.png" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__yellow">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./imgOld/skins/4.png" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__null">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./img/knife.svg" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__null">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./img/knife.svg" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__null">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./img/knife.svg" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__null">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./img/knife.svg" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__null">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./img/knife.svg" alt="skin" class="contracts__skin">
+                </div>
+              </div>
+            </div>
+            <div class="contracts__info">
+              <div class="contracts__info-block">
+                <span class="contracts__info-text">Цена контракта: </span>
+                <span class="contracts__info-price"><span class="og">$</span> <span
+                    class="contracts__info-num">246.76</span></span>
+              </div>
+              <div class="contracts__info-block">
+                <span class="contracts__info-text">Количество предметов: </span>
+                <span class="og contracts__info-quantity">5</span>
+              </div>
+            </div>
+          </article>
+          <article class="contracts__contract">
+            <div class="contracts__block">
+              <div class="contracts__result contracts__item item__purple">
+                <span class="contracts__series">MW</span>
+                <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="186" height="195">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="278" height="185" src="./imgOld/skins/22.png" alt="skin" class="contracts__skin">
+                <div class="contracts__content">
+                  <div class="contracts__left">
+                    <span class="contracts__weapon">FAMAS</span>
+                    <span class="contracts__name">pulse</span>
+                  </div>
+                  <p class="contracts__price"><span class="og">$</span> <span class="contracts__price-num">320.88</span>
+                  </p>
+                </div>
+              </div>
+              <div class="contracts__list">
+                <div class="contracts__item item__red">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./imgOld/skins/12.png" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__pink">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./imgOld/skins/18.png" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__pink">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./imgOld/skins/14.png" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__red">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./imgOld/skins/6.png" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__null">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./img/knife.svg" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__null">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./img/knife.svg" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__null">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./img/knife.svg" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__null">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./img/knife.svg" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__null">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./img/knife.svg" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__null">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./img/knife.svg" alt="skin" class="contracts__skin">
+                </div>
+              </div>
+            </div>
+            <div class="contracts__info">
+              <div class="contracts__info-block">
+                <span class="contracts__info-text">Цена контракта: </span>
+                <span class="contracts__info-price"><span class="og">$</span> <span
+                    class="contracts__info-num">246.76</span></span>
+              </div>
+              <div class="contracts__info-block">
+                <span class="contracts__info-text">Количество предметов: </span>
+                <span class="og contracts__info-quantity">4</span>
+              </div>
+            </div>
+          </article>
+          <article class="contracts__contract">
+            <div class="contracts__block">
+              <div class="contracts__result contracts__item item__red">
+                <span class="contracts__series">MW</span>
+                <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="186" height="195">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="278" height="185" src="./imgOld/skins/10.png" alt="skin" class="contracts__skin">
+                <div class="contracts__content">
+                  <div class="contracts__left">
+                    <span class="contracts__weapon">AK-47</span>
+                    <span class="contracts__name">Corticera</span>
+                  </div>
+                  <p class="contracts__price"><span class="og">$</span> <span class="contracts__price-num">246.76</span>
+                  </p>
+                </div>
+              </div>
+              <div class="contracts__list">
+                <div class="contracts__item item__red">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./imgOld/skins/12.png" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__pink">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./imgOld/skins/18.png" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__pink">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./imgOld/skins/14.png" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__red">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./imgOld/skins/6.png" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__yellow">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./imgOld/skins/4.png" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__red">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./imgOld/skins/12.png" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__pink">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./imgOld/skins/18.png" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__pink">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./imgOld/skins/14.png" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__red">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./imgOld/skins/6.png" alt="skin" class="contracts__skin">
+                </div>
+                <div class="contracts__item item__yellow">
+                  <svg class="contracts__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                    <use href="./imgOld/sprite.svg#bgLogo"></use>
+                  </svg>
+                  <img width="150" height="100" src="./imgOld/skins/4.png" alt="skin" class="contracts__skin">
+                </div>
+              </div>
+            </div>
+            <div class="contracts__info">
+              <div class="contracts__info-block">
+                <span class="contracts__info-text">Цена контракта: </span>
+                <span class="contracts__info-price"><span class="og">$</span> <span
+                    class="contracts__info-num">246.76</span></span>
+              </div>
+              <div class="contracts__info-block">
+                <span class="contracts__info-text">Количество предметов: </span>
+                <span class="og contracts__info-quantity">10</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div style="display: none;" data-tab="upgrades" class="items__tab-content upgrades">
+          <article class="upgrades__upgrade">
+            <div class="upgrades__items">
+              <div class="upgrades__item item__money">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="175" height="130" src="./img/money.png" alt="skin" class="upgrades__skin">
+              </div>
+              <img src="./img/upgrade.svg" alt="up" class="upgrades__icon">
+              <div class="upgrades__item item__pink">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                  <span class="upgrades__series">WW</span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="150" height="100" src="./imgOld/skins/12.png" alt="skin" class="upgrades__skin">
+                <div class="upgrades__content">
+                  <span class="upgrades__weapon">Galil AR</span>
+                  <span class="upgrades__name">ECO</span>
+                </div>
+              </div>
+            </div>
+            <div class="upgrades__info upgrades__success">
+              <p class="upgrades__label">
+                Шанс:
+                <span class="upgrades__chance">35.44%</span>
+              </p>
+              <span class="upgrades__result">
+                <svg width="10" height="8" fill="none">
+                  <use href="./img/sprite.svg#ok"></use>
+                </svg>
+                Выигрыш
+              </span>
+            </div>
+          </article>
+          <article class="upgrades__upgrade">
+            <div class="upgrades__items">
+              <div class="upgrades__item item__money">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="175" height="130" src="./img/money.png" alt="skin" class="upgrades__skin">
+              </div>
+              <img src="./img/upgrade.svg" alt="up" class="upgrades__icon">
+              <div class="upgrades__item item__pink">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                  <span class="upgrades__series">WW</span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="150" height="100" src="./imgOld/skins/12.png" alt="skin" class="upgrades__skin">
+                <div class="upgrades__content">
+                  <span class="upgrades__weapon">Galil AR</span>
+                  <span class="upgrades__name">ECO</span>
+                </div>
+              </div>
+            </div>
+            <div class="upgrades__info upgrades__danger">
+              <p class="upgrades__label">
+                Шанс:
+                <span class="upgrades__chance">35.44%</span>
+              </p>
+              <span class="upgrades__result">
+                <svg width="8" height="12" fill="none">
+                  <use href="./img/sprite.svg#dollar"></use>
+                </svg>
+                Проигрыш
+              </span>
+            </div>
+          </article>
+          <article class="upgrades__upgrade">
+            <div class="upgrades__items">
+              <div class="upgrades__item item__money">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="175" height="130" src="./img/money.png" alt="skin" class="upgrades__skin">
+              </div>
+              <img src="./img/upgrade.svg" alt="up" class="upgrades__icon">
+              <div class="upgrades__item item__pink">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                  <span class="upgrades__series">WW</span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="150" height="100" src="./imgOld/skins/12.png" alt="skin" class="upgrades__skin">
+                <div class="upgrades__content">
+                  <span class="upgrades__weapon">Galil AR</span>
+                  <span class="upgrades__name">ECO</span>
+                </div>
+              </div>
+            </div>
+            <div class="upgrades__info upgrades__success">
+              <p class="upgrades__label">
+                Шанс:
+                <span class="upgrades__chance">35.44%</span>
+              </p>
+              <span class="upgrades__result">
+                <svg width="10" height="8" fill="none">
+                  <use href="./img/sprite.svg#ok"></use>
+                </svg>
+                Выигрыш
+              </span>
+            </div>
+          </article>
+          <article class="upgrades__upgrade">
+            <div class="upgrades__items">
+              <div class="upgrades__item item__money">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="175" height="130" src="./img/money.png" alt="skin" class="upgrades__skin">
+              </div>
+              <img src="./img/upgrade.svg" alt="up" class="upgrades__icon">
+              <div class="upgrades__item item__pink">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                  <span class="upgrades__series">WW</span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="150" height="100" src="./imgOld/skins/12.png" alt="skin" class="upgrades__skin">
+                <div class="upgrades__content">
+                  <span class="upgrades__weapon">Galil AR</span>
+                  <span class="upgrades__name">ECO</span>
+                </div>
+              </div>
+            </div>
+            <div class="upgrades__info upgrades__success">
+              <p class="upgrades__label">
+                Шанс:
+                <span class="upgrades__chance">35.44%</span>
+              </p>
+              <span class="upgrades__result">
+                <svg width="10" height="8" fill="none">
+                  <use href="./img/sprite.svg#ok"></use>
+                </svg>
+                Выигрыш
+              </span>
+            </div>
+          </article>
+          <article class="upgrades__upgrade">
+            <div class="upgrades__items">
+              <div class="upgrades__item item__money">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="175" height="130" src="./img/money.png" alt="skin" class="upgrades__skin">
+              </div>
+              <img src="./img/upgrade.svg" alt="up" class="upgrades__icon">
+              <div class="upgrades__item item__pink">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                  <span class="upgrades__series">WW</span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="150" height="100" src="./imgOld/skins/12.png" alt="skin" class="upgrades__skin">
+                <div class="upgrades__content">
+                  <span class="upgrades__weapon">Galil AR</span>
+                  <span class="upgrades__name">ECO</span>
+                </div>
+              </div>
+            </div>
+            <div class="upgrades__info upgrades__danger">
+              <p class="upgrades__label">
+                Шанс:
+                <span class="upgrades__chance">35.44%</span>
+              </p>
+              <span class="upgrades__result">
+                <svg width="8" height="12" fill="none">
+                  <use href="./img/sprite.svg#dollar"></use>
+                </svg>
+                Проигрыш
+              </span>
+            </div>
+          </article>
+          <article class="upgrades__upgrade">
+            <div class="upgrades__items">
+              <div class="upgrades__item item__money">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="175" height="130" src="./img/money.png" alt="skin" class="upgrades__skin">
+              </div>
+              <img src="./img/upgrade.svg" alt="up" class="upgrades__icon">
+              <div class="upgrades__item item__pink">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                  <span class="upgrades__series">WW</span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="150" height="100" src="./imgOld/skins/12.png" alt="skin" class="upgrades__skin">
+                <div class="upgrades__content">
+                  <span class="upgrades__weapon">Galil AR</span>
+                  <span class="upgrades__name">ECO</span>
+                </div>
+              </div>
+            </div>
+            <div class="upgrades__info upgrades__success">
+              <p class="upgrades__label">
+                Шанс:
+                <span class="upgrades__chance">35.44%</span>
+              </p>
+              <span class="upgrades__result">
+                <svg width="10" height="8" fill="none">
+                  <use href="./img/sprite.svg#ok"></use>
+                </svg>
+                Выигрыш
+              </span>
+            </div>
+          </article>
+          <article class="upgrades__upgrade">
+            <div class="upgrades__items">
+              <div class="upgrades__item item__money">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="175" height="130" src="./img/money.png" alt="skin" class="upgrades__skin">
+              </div>
+              <img src="./img/upgrade.svg" alt="up" class="upgrades__icon">
+              <div class="upgrades__item item__pink">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                  <span class="upgrades__series">WW</span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="150" height="100" src="./imgOld/skins/12.png" alt="skin" class="upgrades__skin">
+                <div class="upgrades__content">
+                  <span class="upgrades__weapon">Galil AR</span>
+                  <span class="upgrades__name">ECO</span>
+                </div>
+              </div>
+            </div>
+            <div class="upgrades__info upgrades__success">
+              <p class="upgrades__label">
+                Шанс:
+                <span class="upgrades__chance">35.44%</span>
+              </p>
+              <span class="upgrades__result">
+                <svg width="10" height="8" fill="none">
+                  <use href="./img/sprite.svg#ok"></use>
+                </svg>
+                Выигрыш
+              </span>
+            </div>
+          </article>
+          <article class="upgrades__upgrade">
+            <div class="upgrades__items">
+              <div class="upgrades__item item__money">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="175" height="130" src="./img/money.png" alt="skin" class="upgrades__skin">
+              </div>
+              <img src="./img/upgrade.svg" alt="up" class="upgrades__icon">
+              <div class="upgrades__item item__pink">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                  <span class="upgrades__series">WW</span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="150" height="100" src="./imgOld/skins/12.png" alt="skin" class="upgrades__skin">
+                <div class="upgrades__content">
+                  <span class="upgrades__weapon">Galil AR</span>
+                  <span class="upgrades__name">ECO</span>
+                </div>
+              </div>
+            </div>
+            <div class="upgrades__info upgrades__danger">
+              <p class="upgrades__label">
+                Шанс:
+                <span class="upgrades__chance">35.44%</span>
+              </p>
+              <span class="upgrades__result">
+                <svg width="8" height="12" fill="none">
+                  <use href="./img/sprite.svg#dollar"></use>
+                </svg>
+                Проигрыш
+              </span>
+            </div>
+          </article>
+          <article class="upgrades__upgrade">
+            <div class="upgrades__items">
+              <div class="upgrades__item item__money">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="175" height="130" src="./img/money.png" alt="skin" class="upgrades__skin">
+              </div>
+              <img src="./img/upgrade.svg" alt="up" class="upgrades__icon">
+              <div class="upgrades__item item__pink">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                  <span class="upgrades__series">WW</span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="150" height="100" src="./imgOld/skins/12.png" alt="skin" class="upgrades__skin">
+                <div class="upgrades__content">
+                  <span class="upgrades__weapon">Galil AR</span>
+                  <span class="upgrades__name">ECO</span>
+                </div>
+              </div>
+            </div>
+            <div class="upgrades__info upgrades__success">
+              <p class="upgrades__label">
+                Шанс:
+                <span class="upgrades__chance">35.44%</span>
+              </p>
+              <span class="upgrades__result">
+                <svg width="10" height="8" fill="none">
+                  <use href="./img/sprite.svg#ok"></use>
+                </svg>
+                Выигрыш
+              </span>
+            </div>
+          </article>
+          <article class="upgrades__upgrade">
+            <div class="upgrades__items">
+              <div class="upgrades__item item__money">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="175" height="130" src="./img/money.png" alt="skin" class="upgrades__skin">
+              </div>
+              <img src="./img/upgrade.svg" alt="up" class="upgrades__icon">
+              <div class="upgrades__item item__pink">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                  <span class="upgrades__series">WW</span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="150" height="100" src="./imgOld/skins/12.png" alt="skin" class="upgrades__skin">
+                <div class="upgrades__content">
+                  <span class="upgrades__weapon">Galil AR</span>
+                  <span class="upgrades__name">ECO</span>
+                </div>
+              </div>
+            </div>
+            <div class="upgrades__info upgrades__success">
+              <p class="upgrades__label">
+                Шанс:
+                <span class="upgrades__chance">35.44%</span>
+              </p>
+              <span class="upgrades__result">
+                <svg width="10" height="8" fill="none">
+                  <use href="./img/sprite.svg#ok"></use>
+                </svg>
+                Выигрыш
+              </span>
+            </div>
+          </article>
+          <article class="upgrades__upgrade">
+            <div class="upgrades__items">
+              <div class="upgrades__item item__money">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="175" height="130" src="./img/money.png" alt="skin" class="upgrades__skin">
+              </div>
+              <img src="./img/upgrade.svg" alt="up" class="upgrades__icon">
+              <div class="upgrades__item item__pink">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                  <span class="upgrades__series">WW</span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="150" height="100" src="./imgOld/skins/12.png" alt="skin" class="upgrades__skin">
+                <div class="upgrades__content">
+                  <span class="upgrades__weapon">Galil AR</span>
+                  <span class="upgrades__name">ECO</span>
+                </div>
+              </div>
+            </div>
+            <div class="upgrades__info upgrades__danger">
+              <p class="upgrades__label">
+                Шанс:
+                <span class="upgrades__chance">35.44%</span>
+              </p>
+              <span class="upgrades__result">
+                <svg width="8" height="12" fill="none">
+                  <use href="./img/sprite.svg#dollar"></use>
+                </svg>
+                Проигрыш
+              </span>
+            </div>
+          </article>
+          <article class="upgrades__upgrade">
+            <div class="upgrades__items">
+              <div class="upgrades__item item__money">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="175" height="130" src="./img/money.png" alt="skin" class="upgrades__skin">
+              </div>
+              <img src="./img/upgrade.svg" alt="up" class="upgrades__icon">
+              <div class="upgrades__item item__pink">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                  <span class="upgrades__series">WW</span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="150" height="100" src="./imgOld/skins/12.png" alt="skin" class="upgrades__skin">
+                <div class="upgrades__content">
+                  <span class="upgrades__weapon">Galil AR</span>
+                  <span class="upgrades__name">ECO</span>
+                </div>
+              </div>
+            </div>
+            <div class="upgrades__info upgrades__success">
+              <p class="upgrades__label">
+                Шанс:
+                <span class="upgrades__chance">35.44%</span>
+              </p>
+              <span class="upgrades__result">
+                <svg width="10" height="8" fill="none">
+                  <use href="./img/sprite.svg#ok"></use>
+                </svg>
+                Выигрыш
+              </span>
+            </div>
+          </article>
+          <article class="upgrades__upgrade">
+            <div class="upgrades__items">
+              <div class="upgrades__item item__money">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="175" height="130" src="./img/money.png" alt="skin" class="upgrades__skin">
+              </div>
+              <img src="./img/upgrade.svg" alt="up" class="upgrades__icon">
+              <div class="upgrades__item item__pink">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                  <span class="upgrades__series">WW</span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="150" height="100" src="./imgOld/skins/12.png" alt="skin" class="upgrades__skin">
+                <div class="upgrades__content">
+                  <span class="upgrades__weapon">Galil AR</span>
+                  <span class="upgrades__name">ECO</span>
+                </div>
+              </div>
+            </div>
+            <div class="upgrades__info upgrades__success">
+              <p class="upgrades__label">
+                Шанс:
+                <span class="upgrades__chance">35.44%</span>
+              </p>
+              <span class="upgrades__result">
+                <svg width="10" height="8" fill="none">
+                  <use href="./img/sprite.svg#ok"></use>
+                </svg>
+                Выигрыш
+              </span>
+            </div>
+          </article>
+          <article class="upgrades__upgrade">
+            <div class="upgrades__items">
+              <div class="upgrades__item item__money">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="175" height="130" src="./img/money.png" alt="skin" class="upgrades__skin">
+              </div>
+              <img src="./img/upgrade.svg" alt="up" class="upgrades__icon">
+              <div class="upgrades__item item__pink">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                  <span class="upgrades__series">WW</span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="150" height="100" src="./imgOld/skins/12.png" alt="skin" class="upgrades__skin">
+                <div class="upgrades__content">
+                  <span class="upgrades__weapon">Galil AR</span>
+                  <span class="upgrades__name">ECO</span>
+                </div>
+              </div>
+            </div>
+            <div class="upgrades__info upgrades__danger">
+              <p class="upgrades__label">
+                Шанс:
+                <span class="upgrades__chance">35.44%</span>
+              </p>
+              <span class="upgrades__result">
+                <svg width="8" height="12" fill="none">
+                  <use href="./img/sprite.svg#dollar"></use>
+                </svg>
+                Проигрыш
+              </span>
+            </div>
+          </article>
+          <article class="upgrades__upgrade">
+            <div class="upgrades__items">
+              <div class="upgrades__item item__money">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="175" height="130" src="./img/money.png" alt="skin" class="upgrades__skin">
+              </div>
+              <img src="./img/upgrade.svg" alt="up" class="upgrades__icon">
+              <div class="upgrades__item item__pink">
+                <div class="upgrades__top">
+                  <span class="upgrades__price"><span class="og">$</span> <span
+                      class="upgrades__price-num">246.76</span></span>
+                  <span class="upgrades__series">WW</span>
+                </div>
+                <svg class="upgrades__bg-logo" fill="white" fill-opacity="0.05" width="98" height="99">
+                  <use href="./imgOld/sprite.svg#bgLogo"></use>
+                </svg>
+                <img width="150" height="100" src="./imgOld/skins/12.png" alt="skin" class="upgrades__skin">
+                <div class="upgrades__content">
+                  <span class="upgrades__weapon">Galil AR</span>
+                  <span class="upgrades__name">ECO</span>
+                </div>
+              </div>
+            </div>
+            <div class="upgrades__info upgrades__success">
+              <p class="upgrades__label">
+                Шанс:
+                <span class="upgrades__chance">35.44%</span>
+              </p>
+              <span class="upgrades__result">
+                <svg width="10" height="8" fill="none">
+                  <use href="./img/sprite.svg#ok"></use>
+                </svg>
+                Выигрыш
+              </span>
             </div>
           </article>
         </div>

@@ -32,8 +32,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const items = document.querySelector('.items')
     const tabs = items.querySelector('.items__tabs')
+    const contents = items.querySelectorAll('.items__tab-content')
     for (let tab of tabs.children) {
       tab.addEventListener('click', (e) => {
+        for (let content of contents) {
+          content.style.display = "none"
+          if (tab.dataset.tab === content.dataset.tab) {
+            content.style.display = 'grid'
+
+            if (tab.dataset.tab === 'items') {
+              content.style.display = 'flex'
+            }
+          }
+        }
+
         for (let tab of tabs.children) {
           tab.classList.remove('items__tab-active')
         }

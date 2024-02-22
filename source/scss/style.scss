@@ -1196,6 +1196,396 @@
   }
 }
 
+.contracts {
+  row-gap: 22px;
+  .og {
+    color: #ffa216;
+  }
+
+  &__contract {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 10px;
+  }
+
+  &__block {
+    display: flex;
+    column-gap: 10px;
+  }
+
+  &__item {
+    width: 212px;
+    height: 175px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    background: rgba(46, 52, 59, 0.6);
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &__result {
+    width: 418px;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 19px 27px;
+  }
+
+  &__series {
+    position: absolute;
+    z-index: 6;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.3);
+    top: 20px;
+    right: 30px;
+    line-height: 1;
+  }
+
+  &__bg-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+  }
+
+  &__skin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    column-gap: 30px;
+    position: relative;
+    z-index: 6;
+    line-height: 1.4;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__weapon {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &__name {
+    font-size: 20px;
+    color: #fff;
+    font-family: "OpenSansBold";
+    text-transform: uppercase;
+  }
+
+  &__price {
+    font-size: 22px;
+    color: #fff;
+    font-family: "OpenSansBold";
+  }
+
+  &__list {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 7px;
+    row-gap: 5px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #2e343b;
+    background: #20252b;
+    padding: 30px 25px;
+    line-height: 1;
+  }
+
+  &__info-block {
+    display: flex;
+    column-gap: 10px;
+    font-size: 16px;
+    font-family: "OpenSansBold";
+  }
+
+  &__info-text {
+    color: #909ba7;
+    text-transform: uppercase;
+  }
+
+  &__info-price {
+    color: #fff;
+  }
+}
+.item {
+  &__yellow {
+    border-bottom: 4px solid #ffd700;
+
+    &::after {
+      box-shadow: 0px 4px 175px 20px rgba(255, 215, 0, 0.5);
+    }
+  }
+
+  &__red {
+    border-bottom: 4px solid #ff4b55;
+
+    &::after {
+      box-shadow: 0px 4px 175px 20px rgba(255, 75, 85, 0.5);
+    }
+  }
+
+  &__pink {
+    border-bottom: 4px solid #b51fc1;
+
+    &::after {
+      box-shadow: 0px 4px 175px 20px rgba(181, 31, 193, 0.5);
+    }
+  }
+
+  &__purple {
+    border-bottom: 4px solid #5c31f2;
+
+    &::after {
+      box-shadow: 0px 4px 175px 20px rgba(92, 49, 242, 0.5);
+    }
+  }
+
+  &__blue {
+    border-bottom: 4px solid #4a69ff;
+
+    &::after {
+      box-shadow: 0px 4px 175px 20px rgba(49, 52, 242, 0.5);
+    }
+  }
+
+  &__money {
+    border-bottom: 4px solid #ffa216;
+
+    &::after {
+      box-shadow: 0px 4px 175px 20px rgba(255, 164, 18, 0.5);
+    }
+  }
+
+  &__null {
+    .contracts__skin {
+      width: 190px;
+      height: auto;
+    }
+  }
+}
+
+.upgrades {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 50px;
+
+  .og {
+    color: #ffa216;
+  }
+
+  &__upgrade {
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+  }
+
+  &__items {
+    position: relative;
+    display: flex;
+    column-gap: 6px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    padding: 15px;
+    width: 243px;
+    height: 175px;
+    overflow: hidden;
+    background: rgba(46, 52, 59, 0.6);
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  &__top {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price {
+    font-size: 16px;
+    font-family: "OpenSansBold";
+    color: #fff;
+    line-height: 1;
+  }
+
+  &__bg-logo {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__skin {
+    position: absolute;
+    z-index: 4;
+    top: 48px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .item__money {
+    .upgrades__skin {
+      top: 22px;
+      right: 16px;
+      transform: translateX(0);
+    }
+
+    .upgrades__bg-logo {
+      top: 52px;
+      right: 36px;
+      transform: translate(0);
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__series {
+    position: relative;
+    z-index: 5;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.3);
+    line-height: 1;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4;
+  }
+
+  &__weapon {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  &__name {
+    font-size: 20px;
+    color: #fff;
+    font-family: "OpenSansBold";
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px 14px 3px;
+    border-right: 2px solid grey;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      pointer-events: none;
+    }
+  }
+
+  &__success {
+    border-right-color: #90db01;
+    &::after {
+      box-shadow: -2px 0px 200px 30px rgba(115, 175, 0, 1);
+    }
+
+    .upgrades__result {
+      background: rgba(115, 175, 0, 0.1);
+      color: #90db01;
+    }
+  }
+
+  &__label {
+    font-size: 15px;
+    font-family: "OpenSansBold";
+    line-height: 1;
+    text-transform: uppercase;
+    color: #909ba7;
+  }
+
+  &__chance {
+    color: #ffa216;
+  }
+
+  &__result {
+    padding: 8px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    line-height: 1;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: "OpenSansExtraBold";
+  }
+
+  &__danger {
+    border-right-color: #ff4b55;
+
+    &::after {
+      box-shadow: -2px 0px 200px 30px rgba(255, 75, 85, 1);
+    }
+    .upgrades__result {
+      background: rgba(255, 75, 85, 0.1);
+      color: #ff4b55;
+    }
+  }
+}
+
 .tasks {
   position: fixed;
   display: flex !important;
@@ -1391,6 +1781,17 @@
   }
 }
 
+@media screen and (max-width: 1600px) {
+  .upgrades {
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+
+    & > .upgrades__upgrade:nth-child(2n + 1) {
+      justify-self: end;
+    }
+  }
+}
+
 @media screen and (max-width: 1500px) {
   .profile {
     &__flex {
@@ -1452,6 +1853,32 @@
     }
     &__buttons {
       justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .contracts {
+    &__block {
+      flex-direction: column;
+      row-gap: 10px;
+    }
+
+    &__result {
+      width: 100%;
+      height: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .upgrades {
+    grid-template-columns: 1fr;
+
+    justify-items: center;
+
+    & > .upgrades__upgrade:nth-child(2n + 1) {
+      justify-self: center;
     }
   }
 }
@@ -1772,6 +2199,163 @@
     &__btn {
       font-size: 12px;
       padding: 8px 12px;
+    }
+  }
+
+  .contracts {
+    &__list {
+      column-gap: 4px;
+      row-gap: 4px;
+    }
+    &__item {
+      width: 170px;
+      height: 135px;
+    }
+
+    &__series {
+      font-size: 14px;
+      right: 25px;
+    }
+
+    &__name {
+      font-size: 16px;
+    }
+
+    &__price {
+      font-size: 18px;
+    }
+
+    &__result {
+      padding: 15px;
+      width: 100%;
+      height: 250px;
+
+      .contracts__skin {
+        width: 220px;
+        height: auto;
+      }
+
+      .contracts__bg-logo {
+        width: 140px;
+        height: auto;
+      }
+    }
+
+    &__skin {
+      width: 120px;
+      height: auto;
+    }
+
+    &__bg-logo {
+      width: 80px;
+      height: auto;
+    }
+
+    &__info {
+      padding: 15px;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 10px;
+    }
+
+    &__info-block {
+      width: 100%;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+  }
+
+  .upgrades {
+    column-gap: 10px;
+    row-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+
+    & > .upgrades__upgrade:nth-child(2n + 1) {
+      justify-self: end;
+    }
+
+    &__items {
+      column-gap: 5px;
+    }
+
+    &__item {
+      padding: 15px 10px;
+      width: 170px;
+      height: 135px;
+    }
+
+    &__price {
+      font-size: 14px;
+    }
+
+    &__series {
+      font-size: 10px;
+    }
+
+    &__weapon {
+      font-size: 10px;
+    }
+
+    &__name {
+      font-size: 16px;
+    }
+
+    &__skin {
+      width: 120px;
+      height: auto;
+      top: 35px;
+      right: 44%;
+    }
+
+    &__bg-logo {
+      width: 80px;
+      height: auto;
+      top: 53%;
+      left: 60%;
+    }
+
+    .item__money {
+      .upgrades__skin {
+        top: 35px;
+        width: 100px;
+      }
+
+      .upgrades__bg-logo {
+        left: auto;
+        top: 40px;
+        right: 15px;
+      }
+    }
+
+    &__info {
+      padding: 10px 15px 10px 3px;
+    }
+
+    &__label {
+      font-size: 14px;
+    }
+
+    &__result {
+      column-gap: 5px;
+      padding: 6px 8px;
+    }
+  }
+
+  .item__null {
+    .contracts__skin {
+      width: 160px;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .upgrades {
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    & > .upgrades__upgrade:nth-child(2n + 1) {
+      justify-self: center;
     }
   }
 }
